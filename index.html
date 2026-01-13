@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khan IT | Digital Marketing Agency</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="layout-wrapper">
+      <nav class="navbar sticky-top">
+        <div class="container navbar-inner">
+          <div class="logo-wrapper">
+            <a href="/"
+              ><img
+                src="./public/logo.png"
+                height="44px"
+                width="216px"
+                alt="Logo"
+                class="logo-img"
+            /></a>
+          </div>
+
+          <div class="desktop-nav">
+            <a href="/" class="nav-link active">Home</a>
+            <a href="./pages/about.html" class="nav-link">About</a>
+
+            <div class="dropdown group">
+              <button class="dropdown-trigger">
+                Services
+                <svg
+                  class="icon-chevron"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <div class="dropdown-menu">
+                <a href="./pages/services/web-design.html">Web Design</a>
+                <a href="./pages/services/seo.html">SEO Marketing</a>
+                <a href="./pages/services/content.html">Content Writing</a>
+              </div>
+            </div>
+
+            <a href="./pages/seo-case-study.html" class="nav-link"
+              >SEO Case study</a
+            >
+            <a href="./pages/contact-us.html" class="nav-link">Contact Us</a>
+          </div>
+
+          <div class="contact-btn-wrapper">
+            <a href="#" class="contact-btn">
+              <img src="./public/call.png" alt="Logo" class="logo-img" />
+              <span>+8801404282727</span>
+            </a>
+          </div>
+
+          <div class="mobile-toggle">
+            <button id="menuToggle">
+              <svg
+                id="menuIcon"
+                class="icon-lg"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M4 6h16M4 12h16m-7 6h7"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div id="mobileMenu" class="mobile-menu hidden">
+          <a href="/" class="mobile-nav-link">Home</a>
+          <a href="./pages/about.html" class="mobile-nav-link">About</a>
+          <div class="mobile-dropdown">
+            <button
+              id="mobileServicesBtn"
+              class="mobile-nav-link dropdown-toggle"
+            >
+              Services
+            </button>
+            <div id="mobileServicesMenu" class="mobile-sub-menu hidden">
+              <a href="./pages/services/web-design.html">Web Design</a>
+              <a href="./pages/services/seo.html">SEO Marketing</a>
+              <a href="./pages/services/content.html">Content Writing</a>
+            </div>
+          </div>
+          <a href="./pages/seo-case-study.html" class="mobile-nav-link"
+            >SEO Case study</a
+          >
+          <a href="./pages/contact-us.html" class="mobile-nav-link"
+            >Contact Us</a
+          >
+        </div>
+      </nav>
+
+      <main class="main-content">
+        <section class="hero-section">
+          <div class="hero-layout">
+            <div class="hero-text-block">
+              <h1 class="hero-title">
+                Digital Marketing <br />
+                Agency in <br />
+                Bangladesh
+              </h1>
+              <p class="hero-desc">
+                Khan IT (led by SEO expert Md Faruk Khan) helps businesses get
+                150% more leads and 2.5x higher conversions through integrated
+                digital marketing and web design.
+              </p>
+              <button class="hero-cta">Book Your Free Consultation</button>
+            </div>
+
+            <div class="hero-visual-grid">
+              <div class="visual-col">
+                <div class="glass-card conversion-card">
+                  <img
+                    src="./public/icons/Frame.png"
+                    alt="Rocket"
+                    class="rocket-icon"
+                  />
+                  <div class="flex-row">
+                    <span class="big-num">200%</span>
+                    <img src="./public/icons/Conversions-Arrow.png" alt="up" />
+                  </div>
+                  <p class="card-label">More Conversions</p>
+                  <p class="card-sub">Than Industry Average</p>
+                </div>
+                <div class="video-thumb">
+                  <img
+                    src="./public/video-image.png"
+                    alt="video"
+                    class="cover-img"
+                  />
+                </div>
+              </div>
+
+              <div class="visual-col">
+                <div class="track-record-card">
+                  <p class="track-title">Our Track Record</p>
+                  <div id="status-cards-container" class="status-stack"></div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="quote-icon-box">
+                    <img src="./public/icons/quote-icon.png" alt="quote" />
+                  </div>
+                  <img
+                    src="./public/icons/walton-icon.png"
+                    alt="walton"
+                    class="client-logo"
+                  />
+                  <br />
+                  <img
+                    src="./public/icons/stars-icon.png"
+                    alt="stars"
+                    class="stars"
+                  />
+                  <p class="testimonial-text">
+                    "Their marketing strategies <br />
+                    are simply outstanding"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
